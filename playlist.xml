@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mp3player>
+
+    <mp3 id="1">
+        <url>mp3/mb_whos_next.mp3</url>
+    </mp3>
+
+    <mp3 id="2">
+        <url>mp3/mb_thinking_about_you.mp3</url>
+    </mp3>
+
+ <mp3 id="3">
+        <url>mp3/mg_memories.mp3</url>
+    </mp3>
+
+</mp3player>
+
+

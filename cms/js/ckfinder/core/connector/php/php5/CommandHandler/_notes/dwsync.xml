@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CommandHandlerBase.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="CreateFolder.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="DeleteFile.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="DeleteFolder.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="DownloadFile.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="FileUpload.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128945950400000000" remote="128970399000000000" />
+<file name="GetFiles.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128945948600000000" remote="128970399000000000" />
+<file name="GetFolders.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="Init.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399000000000" />
+<file name="QuickUpload.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399600000000" />
+<file name="RenameFile.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399600000000" />
+<file name="RenameFolder.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399600000000" />
+<file name="Thumbnail.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128945948680000000" remote="128970399600000000" />
+<file name="XmlCommandHandlerBase.php" server="www.gotchalabs.net//public_html/marcelobarbosa/" local="128933634980000000" remote="128970399600000000" />
+<file name="CommandHandlerBase.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="CreateFolder.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="DeleteFile.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="DeleteFolder.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="DownloadFile.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="FileUpload.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128945950400000000" remote="128971571400000000" />
+<file name="GetFiles.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128945948600000000" remote="128971571400000000" />
+<file name="GetFolders.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="Init.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="QuickUpload.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="RenameFile.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="RenameFolder.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+<file name="Thumbnail.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128945948680000000" remote="128971571400000000" />
+<file name="XmlCommandHandlerBase.php" server="ftp.marcelobarbosa.com.br//marcelobarbosa/Web/" local="128933634980000000" remote="128971571400000000" />
+</dwsync>
