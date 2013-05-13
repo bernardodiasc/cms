@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2013 at 04:33 PM
+-- Generation Time: May 13, 2013 at 05:07 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -1294,75 +1294,6 @@ INSERT INTO `elementos` (`id`, `conteudo`, `tipo_elemento`, `valor`, `atributos`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu`
---
-
-DROP TABLE IF EXISTS `menu`;
-CREATE TABLE IF NOT EXISTS `menu` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(100) NOT NULL,
-  `apelido` varchar(100) NOT NULL,
-  `descricao` text,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `menu_itens`
---
-
-DROP TABLE IF EXISTS `menu_itens`;
-CREATE TABLE IF NOT EXISTS `menu_itens` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `menu` int(10) unsigned NOT NULL,
-  `titulo` varchar(100) NOT NULL,
-  `apelido` varchar(100) NOT NULL,
-  `url` varchar(255) NOT NULL,
-  `target` varchar(40) NOT NULL,
-  `pai` int(10) unsigned DEFAULT NULL,
-  `publicado` int(10) unsigned NOT NULL DEFAULT '0',
-  `ordem` int(10) unsigned NOT NULL DEFAULT '0',
-  `nivel_acesso` int(10) unsigned NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`,`menu`),
-  KEY `menu_itens_FKIndex1` (`menu`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `termos`
---
-
-DROP TABLE IF EXISTS `termos`;
-CREATE TABLE IF NOT EXISTS `termos` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `termo` varchar(100) NOT NULL,
-  `descricao` text,
-  `peso` int(10) unsigned NOT NULL DEFAULT '0',
-  `datacriacao` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `datamodificacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `termos_conteudo`
---
-
-DROP TABLE IF EXISTS `termos_conteudo`;
-CREATE TABLE IF NOT EXISTS `termos_conteudo` (
-  `conteudo` int(10) unsigned NOT NULL,
-  `termo` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`conteudo`,`termo`),
-  KEY `FK_conteudo` (`conteudo`),
-  KEY `FK_termo` (`termo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tipo_conteudo`
 --
 
@@ -1583,19 +1514,6 @@ ALTER TABLE `conteudos`
 ALTER TABLE `elementos`
   ADD CONSTRAINT `elementos_ibfk_3` FOREIGN KEY (`conteudo`) REFERENCES `conteudos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `elementos_ibfk_4` FOREIGN KEY (`tipo_elemento`) REFERENCES `tipo_elemento` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `menu_itens`
---
-ALTER TABLE `menu_itens`
-  ADD CONSTRAINT `menu_itens_ibfk_1` FOREIGN KEY (`menu`) REFERENCES `menu` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Constraints for table `termos_conteudo`
---
-ALTER TABLE `termos_conteudo`
-  ADD CONSTRAINT `termos_conteudo_ibfk_1` FOREIGN KEY (`conteudo`) REFERENCES `conteudos` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `termos_conteudo_ibfk_2` FOREIGN KEY (`termo`) REFERENCES `termos` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `tipo_elemento`
